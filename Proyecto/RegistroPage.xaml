@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.RegistroPage"
+             Title="Registro">
+
+    <StackLayout Margin="30">
+        <Label Text="Nombre" FontSize="18" />
+        <Entry x:Name="entryNombre" Placeholder="Ingrese su nombre" FontSize="16" />
+
+        <Label Text="Primer Apellido" FontSize="18" />
+        <Entry x:Name="entryPrimerApellido" Placeholder="Ingrese su primer apellido" FontSize="16" />
+
+        <Label Text="Segundo Apellido" FontSize="18" />
+        <Entry x:Name="entrySegundoApellido" Placeholder="Ingrese su segundo apellido" FontSize="16" />
+
+        <Label Text="Usuario" FontSize="18" />
+        <Entry x:Name="entryUsuario" Placeholder="Ingrese su usuario" FontSize="16" />
+
+        <Label Text="Contraseña" FontSize="18" />
+        <Entry x:Name="entryContraseña" Placeholder="Ingrese su contraseña" IsPassword="True" FontSize="16" />
+
+        <Button Text="Registrarse" FontSize="16" Command="{Binding OnRegister}" />
+    </StackLayout>
+
+</ContentPage>

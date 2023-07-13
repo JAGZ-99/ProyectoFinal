@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Perfil"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FDF0D5">
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="flecha" x:Name="btnRegresar" HeightRequest="20" HorizontalOptions="Start" BackgroundColor="White" Margin="20"/>
+                <Image x:Name="icono" Source="logoBank"  WidthRequest="190" HorizontalOptions="CenterAndExpand" Margin="-80,20,0,0"/>
+            </StackLayout>
+
+            <Label Text="Perfil" TextColor="Black" FontSize="25" Margin="10" HorizontalTextAlignment="Center" />
+
+            <Frame HeightRequest="60" WidthRequest="350"  BackgroundColor="#E8F3FF" Padding="10" Margin="10" CornerRadius="10"
+                    HorizontalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Image Source="home" WidthRequest="45" HorizontalOptions="Start" Margin="10,0"/>
+                    <Label Text="Cédula"  Margin="0,-50" FontSize="14" TextColor="Black"  
+                           HorizontalOptions="CenterAndExpand"></Label>
+                    <Label x:Name="cedula" HorizontalOptions="CenterAndExpand" Text="1722543871"  Margin="10,50"  FontSize="14" TextColor="Black"></Label>
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="60" WidthRequest="350"  BackgroundColor="#E8F3FF" Padding="10" Margin="10" CornerRadius="10"
+                    HorizontalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Image Source="home" WidthRequest="45" HorizontalOptions="Start" Margin="10,0"/>
+                    <Label Text="Usuario"  Margin="0,-50" FontSize="14" TextColor="Black"  
+                           HorizontalOptions="CenterAndExpand"></Label>
+                    <Label x:Name="usuario" HorizontalOptions="CenterAndExpand" Text="JAGZ_99"  Margin="10,50"  FontSize="14" TextColor="Black"></Label>
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="60" WidthRequest="350"  BackgroundColor="#E8F3FF" Padding="10" Margin="10" CornerRadius="10"
+                    HorizontalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Image Source="home" WidthRequest="45" HorizontalOptions="Start" Margin="10,0"/>
+                    <Label Text="Correo"  Margin="0,-50" FontSize="14" TextColor="Black"  
+                           HorizontalOptions="CenterAndExpand"></Label>
+                    <Label x:Name="correo" HorizontalOptions="CenterAndExpand" Text="ja@gmail.com"  Margin="10,50"  FontSize="14" TextColor="Black"></Label>
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="60" WidthRequest="350"  BackgroundColor="#E8F3FF" Padding="10" Margin="10" CornerRadius="10"
+                    HorizontalOptions="CenterAndExpand">
+                <StackLayout>
+                    <Image Source="home" WidthRequest="45" HorizontalOptions="Start" Margin="10,0"/>
+                    <Label Text="Contacto"  Margin="0,-50" FontSize="14" TextColor="Black"  
+                           HorizontalOptions="CenterAndExpand"></Label>
+                    <Label x:Name="contacto" HorizontalOptions="CenterAndExpand" Text="0984748181"  Margin="10,50"  FontSize="14" TextColor="Black"></Label>
+                </StackLayout>
+            </Frame>
+
+            <Button x:Name="btnActualizar"  Text="Actualizar información" HeightRequest="50" BackgroundColor="#D90429" TextTransform="None"
+                        TextColor="White"  CornerRadius="30" Margin="90,30,90,0" FontSize="13"></Button>
+            <Label Text="Nota: Recuerda que únicamente puedes actualizar tu teléfono y correo. " 
+                    Margin="50" HorizontalTextAlignment="Center" TextColor="#D90429" FontSize="13"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

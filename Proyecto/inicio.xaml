@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.inicio">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout BackgroundColor="#FDF0D5" Padding="20">
+                    <Image Source="https://oscardms.com/wp-content/uploads/2017/10/logo-lan.jpg" WidthRequest="550" HorizontalOptions="Center" Margin="0,30,0,20" />
+
+                    <Label Text="Misión:" FontSize="18" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    <Label Text="Nuestra misión es brindar experiencias de viaje excepcionales, ofreciendo servicios de alta calidad y personalizados a nuestros clientes. Nos esforzamos por superar las expectativas, proporcionando destinos turísticos emocionantes, atención al cliente excepcional y soluciones de viaje integrales. Trabajamos con pasión y compromiso para hacer realidad los sueños de nuestros clientes y convertir cada viaje en una experiencia inolvidable." TextColor="Black" FontSize="14" />
+
+                    <Label Text="Visión:" FontSize="18" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                    <Label Text="Nuestra visión es ser reconocidos como la agencia de viajes líder en el mercado, conocida por la excelencia en el servicio al cliente, la innovación en la oferta de destinos turísticos y la creación de experiencias de viaje únicas. Nos esforzamos por ser el socio preferido de nuestros clientes al planificar sus vacaciones y viajes de negocios, ofreciendo un enfoque personalizado y soluciones adaptadas a sus necesidades." TextColor="Black" FontSize="14" />
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

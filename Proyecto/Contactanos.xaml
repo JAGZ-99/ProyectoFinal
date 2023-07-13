@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Contáctanos">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#FDF0D5" Padding="20">
+            <StackLayout HorizontalOptions="Center">
+                <Label Text="Contáctanos " Margin="0,50" FontSize="50" TextColor="Black"></Label>
+            </StackLayout>
+
+            <Entry Placeholder="Cédula" x:Name="cedulaEntry" Keyboard="Numeric" MaxLength="10" />
+            <Entry Placeholder="Nombre" x:Name="nombreEntry" Keyboard="Text" MaxLength="15"/>
+            <Entry Placeholder="Teléfono" x:Name="telefonoEntry" Keyboard="Telephone" MaxLength="10"/>
+            <Entry Placeholder="Dirección" x:Name="direccionEntry" Keyboard="Default" MaxLength="20"/>
+            <Entry Placeholder="Correo electrónico" x:Name="correoEntry" Keyboard="Email" MaxLength="15"/>
+            <Editor Placeholder="Comentarios" x:Name="comentariosEditor" Keyboard="Text" MaxLength="15"/>
+            <Frame Margin="50,0" BackgroundColor="Transparent">
+                <Button Text="Enviar" Clicked="enviar_Clicked" x:Name="enviar" BackgroundColor="#D90429" TextColor="White" BorderColor="Black" CornerRadius="80" />
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

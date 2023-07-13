@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.MainPage"
+             BackgroundColor="#FDF0D5" NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <OnPlatform x:Key="CustomFont" x:TypeArguments="x:String">
+            <On Platform="iOS" Value="SpecialElite-Regular" />
+            <On Platform="Android" Value="Fonts/SpecialElite-Regular.ttf#SpecialElite-Regular" />
+            <On Platform="UWP" Value="Assets/Fonts/SpecialElite-Regular.ttf#SpecialElite-Regular" />
+        </OnPlatform>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Frame BackgroundColor="#D90429" Padding="24" CornerRadius="0">
+            <Label Text="Destinos Al Vuelo" HorizontalTextAlignment="Center" TextColor="#FFFFFF" FontSize="36" FontFamily="{StaticResource CustomFont}" />
+        </Frame>
+        <Label Text="Usuario" FontSize="18" Margin="30,10,30,10" TextColor="Black" FontFamily="{StaticResource CustomFont}" />
+        <Entry Placeholder="Ingresa tu usuario" FontSize="16" Margin="30,0,30,10" TextColor="Black" BackgroundColor="White" FontFamily="{StaticResource CustomFont}" />
+        <Label Text="Contraseña" FontSize="18" Margin="30,0,30,10" TextColor="Black" FontFamily="{StaticResource CustomFont}" />
+        <Entry Placeholder="Ingresa tu contraseña" IsPassword="True" FontSize="16" Margin="30,0,30,10" TextColor="Black" BackgroundColor="White" FontFamily="{StaticResource CustomFont}" />
+        <Button Text="Iniciar Sesión" FontSize="16" BackgroundColor="#D90429" TextColor="#FFFFFF" Margin="30,10,30,10" FontFamily="{StaticResource CustomFont}" Clicked="Button_Clicked"/>
+        <StackLayout Orientation="Horizontal" Margin="30,10,0,0">
+            <Label Text="¿No tienes una cuenta? " FontSize="16" TextColor="Black" FontFamily="{StaticResource CustomFont}" />
+            <Label Text="Regístrate" FontSize="16" TextColor="#D90429" FontFamily="{StaticResource CustomFont}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnRegisterTapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+
+        <!-- Botones adicionales -->
+        <StackLayout Margin="30,20,30,0">
+            <Button Text="Iniciar sesión con Apple" FontSize="14" BackgroundColor="#000000" TextColor="#FFFFFF" CornerRadius="10" Margin="0,0,0,10" Clicked="OnAppleLoginClicked">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="{StaticResource CustomFont}" Glyph="&#xf003;" Color="White" Size="16" />
+                </Button.ImageSource>
+            </Button>
+            <Button Text="Iniciar con tu yahoo" FontSize="14" BackgroundColor="Purple" TextColor="#FFFFFF" CornerRadius="10" Margin="0,0,0,10" Clicked="OnYahooLoginClicked">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="{StaticResource CustomFont}" Glyph="&#xf003;" Color="White" Size="16" />
+                </Button.ImageSource>
+            </Button>
+            <Button Text="Iniciar con Facebook" FontSize="14" BackgroundColor="#3B5998" TextColor="#FFFFFF" CornerRadius="10" Margin="0,0,0,10" Clicked="OnFacebookLoginClicked">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="{StaticResource CustomFont}" Glyph="&#xf09a;" Color="White" Size="16" />
+                </Button.ImageSource>
+            </Button>
+            <Button Text="Iniciar con Google" FontSize="14" BackgroundColor="#DB4437" TextColor="#FFFFFF" CornerRadius="10" Margin="0,0,0,10" Clicked="OnGoogleLoginClicked">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="{StaticResource CustomFont}" Glyph="&#xf1a0;" Color="White" Size="16" />
+                </Button.ImageSource>
+            </Button>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

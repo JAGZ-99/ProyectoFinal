@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Promociones">
+    <ContentPage.Content>
+        <StackLayout x:Name="promocionesStackLayout" BackgroundColor="#FDF0D5" Padding="20">
+
+            <StackLayout Background="flecha.png">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="200"/>
+                        <RowDefinition />
+
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+
+
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Row="1" Grid.Column="0" Margin="0,30" VerticalOptions="CenterAndExpand">
+
+                        <Image Source="https://imagenes.elpais.com/resizer/bDGIgOt-2KpcWOaNutNRzDabSeY=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/R24USKLELDZG34WDOLIU4SMCOA.jpg" 
+                             Aspect="AspectFit" ></Image>
+
+                        <Label Text="Cuenca" FontSize="30" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1" Grid.Column="1" Margin="0,30" VerticalOptions="CenterAndExpand">
+
+                        <Image Source="etiqueta.png" WidthRequest="120"
+                             Aspect="AspectFit" ></Image>
+
+                        <Label Text="30%" FontSize="30" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" Grid.Column="0" Margin="0,30" VerticalOptions="CenterAndExpand">
+
+                        <Image Source="etiqueta.png" WidthRequest="120"
+                             Aspect="AspectFit" ></Image>
+
+                        <Label Text="20%" FontSize="30" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" Grid.Column="1" Margin="0,30" VerticalOptions="CenterAndExpand">
+
+                        <Image Source="https://imagenes.elpais.com/resizer/B2axVkjjOjwuQ_GyWI50LzlllwA=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/U7EWMJXHQBENNG5XNZUY5ITGUY.jpg" 
+                             Aspect="AspectFit" ></Image>
+
+                        <Label Text="México" FontSize="30" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                    </StackLayout>
+
+                </Grid>
+
+
+                <Frame Margin="50,0" BackgroundColor="Transparent">
+                    <Button Text="Ver Mas" BackgroundColor="#D90429" TextColor="White" BorderColor="Black" CornerRadius="80" Clicked="Button_Clicked"></Button>
+                </Frame>
+
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
